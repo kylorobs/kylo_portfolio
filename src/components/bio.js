@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import FindOutMore from './FindOutMore/FindOutMore';
 
 import { rhythm } from "../utils/typography"
 
@@ -36,7 +37,7 @@ const Bio = () => {
   return (
     <div
       style={{
-        display: `flex`,
+       
         marginBottom: rhythm(2.5),
       }}
     >
@@ -60,6 +61,7 @@ const Bio = () => {
           You should follow him on Twitter
         </a>
       </p>
+      <FindOutMore />
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import React from "react"
-import Footer from './Layout/footer';
-import Header from './Layout/Header/header';
+import Footer from './Footer/footer';
+import Header from './Header/header';
 
-import { rhythm} from "../utils/typography"
+import { rhythm} from "../../utils/typography";
 
 class Layout extends React.Component {
   render() {
@@ -11,8 +11,10 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: '100%',
+          padding: '1em 3em',
+          // maxWidth: rhythm(24),
+          // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <Header {...this.props}/>
